@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../data/jquery/jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+        jQuery.ajax({
+            type: "get", //使用get方式
+            url: "../data/list.json", //json文件相对于这个HTML的路径
+            dataType: "json",
+            success: function (res) {
+                //这个res就是json数据
+                let date = res.data.dataList;
+                console.log(date);
+                // date.forEach(function(item, index){
+                //     jQuery.ajax({
+                //         type: "get", //使用get方式
+                //         url: "../php/data.php", //json文件相对于这个HTML的路径
+                //         data: {
+                //             id: item.id,
+                //             skuCode:item.skuCode,
+                //             skuName:item.skuName,
+                //             sName:item.sName,
+                //             relaSpuId:item.relaSpuId,
+                //             promotion:item.promotion,
+                //             brief:item.brief,
+                //             salePrice:item.salePrice,
+                //             marketPrice:item.marketPrice,
+                //             points:item.points,
+                //             cart_number:item.cart_number,
+                //             goods_number:item.goods_number,
+                //             is_select:item.is_select,
+                //             isDefault:item.isDefault,
+                //             disabled:item.disabled,
+                //             images:item.images[0].smallPic
+                //         },
+                //         dataType: "json",
+                //         success: function (ress) {
+                //             //这个res就是json数据
+                //             let dateq = ress;
+                //             console.log(dateq);
+                //         },
+                //         error: function () {
+                //             alert("请求失败");
+                //         }
+                //     });
+                // });
+
+            },
+            error: function () {
+                alert("请求失败");
+            }
+        });
+    </script>
+</body>
+
+</html>

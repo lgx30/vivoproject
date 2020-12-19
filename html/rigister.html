@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <script src="../data/jquery/jquery.min.js"></script>
+    <script src="../data/validate/jquery.validate.min.js"></script>
+    <script src="../data/validate/localization/messages_zh_TW.min.js"></script>
+    <link rel="stylesheet" href="../css/rigister.css">
+</head>
+<body>
+    <div class="box">
+         <div class="title_img">
+            <img class="imgs" src="../images/login_logo1.png" alt="">
+         </div>
+         <div class="title">
+            帐号注册
+         </div>
+         <form action="" id="rigister" >
+            <p class="p1">
+                <input type="text" id="username" name="username" placeholder="用户名">
+            </p>
+            <p class="p2">
+                <input type="password" id="password" name="password" placeholder="密码">
+                <span class="eye">
+                    <img class="imgTab" src="../images/eye2.png" alt="">
+                </span>
+            </p>
+            <p class="p3">
+                <input type="text" id="phone" name="phone" placeholder="手机号">
+            </p>
+            <p class="p4">
+                <input type="checkbox" class="put" name="server">
+                <span class="span1">我已阅读并接受</span>
+                <a href="" class="span2">《服务协议》</a>
+                <span class="span3">和</span>
+                <a href="" class="span2">《隐私政策》</a>
+            </p>
+            <p class="p5">
+                <!-- 使用JQ正则验证时不能使用button不能使用input形式的-->
+                <!-- <input type="button" value="登录" class="btn1"> -->
+                <button class="btn1">注册</button>
+            </p>
+        </form>
+    </div>
+    <div class="foot">
+        <div class="service">
+            <a href="" class="to_server">
+                <img src="../images/kefu.png" alt="">
+                <span>在线客服</span>
+            </a>
+            <a href="" class="to_server">
+                <img src="../images/ex.png" alt="">
+                <span>400-678-9688(24小时全国服务热线)</span>
+            </a>
+        </div> 
+        <div class="copyrihgt">
+            COPYRIGHT ©2020 广东天宸网络科技有限公司 版权所有 保留一切权利│隐私政策│法律声明│粤B2-20080267 │粤ICP备05100288号
+        </div>      
+     </div>
+    <script src="../js/rigister.js"></script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  background: #f7f7f7;
+}
+
+.box {
+  width: 100%;
+  height: 780px;
+  background-color: #e1ecfe;
+}
+
+.box .banner {
+  width: 1200px;
+  height: 780px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.box .banner .banner_img {
+  width: 100%;
+  height: 100%;
+}
+
+.box .banner .logo {
+  width: 145px;
+  height: 52px;
+  position: absolute;
+  top: 0;
+  left: 243px;
+  background-image: url(../images/login_logo.png);
+  background-size: 100% 100%;
+}
+
+.box .banner .box2 {
+  width: 360px;
+  height: 567px;
+  min-height: 513px;
+  position: absolute;
+  top: 74px;
+  right: 0;
+  background: #fff;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+}
+
+.box .banner .box2 .form_logo {
+  width: 160px;
+  height: 42px;
+  margin: 0 auto;
+}
+
+.box .banner .box2 .form_logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.box .banner .box2 .title {
+  margin-top: 15px;
+  font-size: 19px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+}
+
+.box .banner .box2 #login {
+  width: 360px;
+  position: relative;
+}
+
+.box .banner .box2 #login .p1 {
+  width: 360px;
+  height: 48px;
+  margin-top: 56px;
+  border: 1px solid #dedfe0;
+  position: relative;
+}
+
+.box .banner .box2 #login .p1 #username {
+  width: 348px;
+  height: 46px;
+  float: left;
+  display: block;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #000;
+  padding-left: 12px;
+}
+
+.box .banner .box2 #login .p1 label.error {
+  position: absolute;
+  z-index: 100;
+  color: red;
+  display: block;
+  left: 12px;
+  top: 117%;
+}
+
+.box .banner .box2 #login .p2 {
+  width: 360px;
+  height: 48px;
+  margin-top: 35px;
+  border: 1px solid #dedfe0;
+  position: relative;
+}
+
+.box .banner .box2 #login .p2 #password {
+  width: 300px;
+  height: 46px;
+  font-size: 16px;
+  color: #000;
+  border: none;
+  outline: none;
+  padding: 0 48px 0 12px;
+}
+
+.box .banner .box2 #login .p2 label.error {
+  position: absolute;
+  z-index: 100;
+  top: 10px;
+  color: red;
+  display: block;
+  left: 12px;
+  top: 117%;
+}
+
+.box .banner .box2 #login .p2 .eye {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 21px;
+  height: 18px;
+  display: block;
+}
+
+.box .banner .box2 #login .p2 .eye img {
+  width: 100%;
+  height: 100%;
+}
+
+.box .banner .box2 #login .p3 {
+  margin-top: 35px;
+}
+
+.box .banner .box2 #login .p3 .btn1 {
+  width: 360px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 17px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  background-image: linear-gradient(90deg, #418eff, #4566ff);
+  border: none;
+  outline: none;
+}
+
+.box .banner .box2 #login .p3 .btn1:hover {
+  cursor: pointer;
+  background: #456fff;
+}
+
+.box .banner .box2 #login .p4 {
+  margin-top: 15px;
+}
+
+.box .banner .box2 #login .p4 .btn2 {
+  width: 360px;
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #456fff;
+  color: #456fff;
+  font-size: 17px;
+  text-align: center;
+  background: #fff;
+}
+
+.box .banner .box2 #login .p4 .btn2:hover {
+  cursor: pointer;
+  background: #D4DFFA;
+}
+
+.box .banner .box2 .sp {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.box .banner .box2 .form_foot {
+  margin-top: 30px;
+  color: #999;
+  text-align: center;
+  font-size: 13px;
+}
+
+.box .banner .box2 .form_foot .title1 {
+  position: relative;
+}
+
+.box .banner .box2 .form_foot .title1::before {
+  content: "";
+  width: 130px;
+  height: 1px;
+  background: #ccc;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.box .banner .box2 .form_foot .title1::after {
+  content: "";
+  width: 130px;
+  height: 1px;
+  background: #ccc;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.box .banner .box2 .form_foot .title2 {
+  width: 360px;
+  margin-top: 15px;
+}
+
+.box .banner .box2 .form_foot .title2 .imgs1 {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  background-image: url(../images/weixin.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+
+.box .banner .box2 .form_foot .title2 .imgs1:hover {
+  cursor: pointer;
+}
+
+.box .banner .box2 .form_foot .title2 .imgs2 {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  background-image: url(../images/zhifubao.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+
+.box .banner .box2 .form_foot .title2 .imgs2:hover {
+  cursor: pointer;
+}
+
+.box .banner .box2 .form_foot .title2 .imgs3 {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  background-image: url(../images/weibo.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.box .banner .box2 .form_foot .title2 .imgs3:hover {
+  cursor: pointer;
+}
+
+.foot {
+  width: 1200px;
+  margin-top: 135px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 11px;
+  color: #9d9d9d;
+}
+
+.foot .service {
+  width: 1200px;
+}
+
+.foot .service .to_server {
+  text-decoration: none;
+}
+
+.foot .service .to_server:hover {
+  color: #456fff;
+}
+
+.foot .service .to_server img {
+  width: 18px;
+  height: 15px;
+  vertical-align: text-bottom;
+  margin-right: 10px;
+}
+
+.foot .service .to_server span {
+  margin-right: 30px;
+}
+
+.foot .copyrihgt {
+  padding: 10px 0;
+  font-size: 10px;
+}

@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <script src="./data/jquery/jquery.min.js"></script>
+    <script src="./data/validate/jquery.validate.min.js"></script>
+    <script src="./data/validate/localization/messages_zh_TW.min.js"></script>
+    <script src="./data/swiper-master/package/swiper-bundle.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./data/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./data/swiper-master/package/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/index1.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="header_top">
+            <div class="top">
+                <ul class="top_navs">
+                    <li>
+                        <a href="" class="head_brand">品牌</a>
+                    </li>
+                    <li>
+                        <a href="" class="head_originos">OriginOS</a>
+                    </li>
+                    <li>
+                        <a href="" class="head_store">体验店</a>
+                    </li>
+                    <li>
+                        <a href="" class="head_cooperation">企业业务</a>
+                    </li>
+                    <li>
+                        <a href="" class="head_bbs">社区</a>
+                    </li>
+                </ul>
+                <div class="top_user">
+                    <a href="" class="user_app">
+                        <i class="iconfont icon-xiazai"></i>
+                        下载APP
+                        <div class="user_app_qrCode">
+                            <img src="./images/app.png">
+                            <span>扫描下载 vivo官网APP</span>
+                        </div>
+                    </a>
+                    <a href="" class="shopCar">购物车</a>
+                    <div class="member_login">
+                        <span class="aa">个人中心</span> 
+                        <div class="user_lists">
+                            <div class="user_content">
+                              <a class="user_login" href="./login.html">
+                                <i class="iconfont icon-denglu"></i>
+                                <span>登录</span> 
+                            </a>
+                            </div>
+                            <div class="user_content">
+                              <a class="user_register" href="./rigister.html">
+                                <i class="iconfont icon-zhuceshenpi"></i>
+                                <span>注册</span> 
+                              </a>
+                            </div> 
+                      </div> 
+                    </div>       
+                </div>
+            </div>
+        </div>
+        <div class="header_buttom">
+          <div class="header_logo">
+              <img src="./images/login_logo1.png" alt="">
+          </div>
+          <ul class="site_navs">
+            <li class="head_series">
+                <a id="15" href="" class="category_nex">NEX系列</a>
+            </li>
+            <li class="head_series">
+                <a id="16" href="" class="category_x">X系列</a>
+            </li>
+            <li class="head_series">
+                <a id="70" href="" class="category_s" >S系列</a>
+            </li>
+            <li class="head_series">
+                <a id="18" href="" class="category_y" >Y系列</a>
+            </li>
+            <li class="head_series">
+                <a id="17" href="" class="category_z" >Z系列</a>
+            </li>
+            <li class="head_series">
+                <a id="19" href="" class="category_u" >U系列</a>
+            </li>
+            <li class="head_series">
+                <a id="138" href="" class="category_iqoo" >iQOO手机</a>
+            </li>
+            <li class="head_series">
+                <a id="88" href="" class="category_earphone">智能硬件</a></li>
+            <li>
+                <a id="20" href="" class="head_shop">商城</a>
+            </li>
+            <li>
+                <a id="21" href="" class="head_service">服务</a>
+            </li>
+
+          </ul>
+          <div class="navs_right">
+              <i class="iconfont icon-xinxi"></i>
+          </div>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+    <div class="banner">
+        <div class="banner_swiper">
+            <!-- Swiper -->
+          <div class="swiper-container swiper1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(./images/indexBanner1.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(./images/indexBanner2.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(./images/indexBanner3.png)"></div>
+                <div class="swiper-slide" style="background-image:url(./images/indexBanner4.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(./images/indexBanner5.png)"></div>
+               </div>
+                <!-- Add Pagination -->
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination swiper-pagination-white swp1"></div>
+           </div>
+        </div>
+    </div>
+    <!-- 商品种类 -->
+    <div class="wrapper">
+        <ul class="category">
+            <li class="category_li">
+                <a href="./html/list.html" class="category_name">
+                    手机
+                    <span class="arrow"></span>
+                </a>
+                <div class="category_box">
+                    <!-- <div class="category_detail">
+                        <a href="" class="category_all">
+                            全部手机
+                        <span class="arrow"></span>
+                        </a>
+                        <p>手机</p>
+                        <ul class="category_sub">
+                            <li>
+                                <a href="" style="display: block; background-image: url(&quot;https://shopstatic.vivo.com.cn/vivoshop/commodity/category/1594984070758_312x100.png&quot;);">
+                                    个人护理
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" style="display: block; background-image: url(&quot;https://shopstatic.vivo.com.cn/vivoshop/commodity/category/1594984109913_312x100.jpg&quot;);">
+                                    家居家纺
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" style="display: block; background-image: url(&quot;https://shopstatic.vivo.com.cn/vivoshop/commodity/category/1594984152478_312x100.png&quot;);">
+                                    生活日用
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" style="display: block; background-image: url(&quot;https://shopstatic.vivo.com.cn/vivoshop/commodity/category/1601290808332_312x100.jpg&quot;);">
+                                    配饰/箱包
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" style="display: block; background-image: url(&quot;https://shopstatic.vivo.com.cn/vivoshop/commodity/category/1601265605868_312x100.jpg&quot;);">
+                                    运动健身
+                                </a>
+                            </li>
+                        </ul>
+                        
+                        <ul class="category_product">
+                            <li>
+                                <i class="icon_tag hot"></i>
+                                <a href="">
+                                    <img alt="" src="https://shopstatic.vivo.com.cn/vivoshop/commodity/80/10006080_1605597375363_250x250.png.webp">
+                                    <span>SKG 颈部按摩仪 2.0 升级版 蓝牙款</span>
+                                </a>
+                            </li>
+                            <li>
+                                <i class="icon_tag recomm"></i>
+                                <a href="">
+                                    <img alt="" src="https://shopstatic.vivo.com.cn/vivoshop/commodity/83/10000483_1588756862043_250x250.png.webp" lazy="loaded">
+                                    <span>须眉 便携式剃须刀ST-R102</span>
+                                </a>
+                            </li>
+                            <li>
+                                <i class="icon_tag"></i>
+                                <a href=""><img alt="" src="https://shopstatic.vivo.com.cn/vivoshop/commodity/04/10000704_1555142662456_250x250.jpg.webp" lazy="loaded">
+                                    <span>V.FRIENDS摆件公仔</span>
+                                </a>
+                            </li>
+                            <li>
+                                <i class="icon_tag"></i>
+                                <a href="">
+                                    <img alt="" src="https://shopstatic.vivo.com.cn/vivoshop/commodity/76/10000376_1588765349494_250x250.png.webp" lazy="loaded">
+                                    <span>Teethcare 声波电动牙刷</span>
+                                </a>
+                            </li>
+                            <li>
+                                <i class="icon_tag"></i>
+                                <a href="">
+                                    <img alt="" src="https://shopstatic.vivo.com.cn/vivoshop/commodity/55/10005555_1593424629115_250x250.png.webp" lazy="loaded">
+                                    <span>赛嘉 声波电动牙刷 SG551</span>
+                                </a>
+                            </li>
+                            <li>
+                                <i class="icon_tag"></i>
+                                <a href="">
+                                    <img alt=""  src="https://shopstatic.vivo.com.cn/vivoshop/commodity/07/10006007_1603703989287_250x250.png.webp" lazy="loaded">
+                                    <span>金史密斯 走步机 S1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <i class="icon_tag"></i>
+                                <a href="">
+                                    <img alt=""  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" lazy="loading">
+                                    <span>金史密斯 跑步机 K9H</span>
+                                </a>
+                            </li>
+                            <li>
+                                <i class="icon_tag"></i>
+                                <a href="https://shop.vivo.com.cn/product/10006005?skuId=119660">
+                                    <img alt=""  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" lazy="loading">
+                                    <span>金史密斯 跑步机 R1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <i class="icon_tag"></i>
+                                <a href="https://shop.vivo.com.cn/product/10001718?skuId=102424">
+                                    <img alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" lazy="loading">
+                                    <span>雨天回南天衣物快速烘干，便携干衣干鞋器</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+            </li>
+            <li class="category_li">
+                <a href="" class="category_name">
+                    手机充电
+                    <span class="arrow"></span>
+                </a>
+                <div class="category_box">
+
+                </div>
+            </li>
+            <li class="category_li">
+                <a href="" class="category_name">
+                    手机配件
+                    <span class="arrow"></span>
+                </a>
+                <div class="category_box">
+
+                </div>
+            </li>
+            <li class="category_li">
+                <a href="" class="category_name">
+                    音乐设备
+                    <span class="arrow"></span>
+                </a>
+                <div class="category_box">
+
+                </div>
+            </li>
+            <li class="category_li">
+                <a href="" class="category_name">
+                    智能硬件
+                    <span class="arrow"></span>
+                </a>
+                <div class="category_box">
+
+                </div>
+            </li>
+            <li class="category_li">
+                <a href="" class="category_name">
+                    游戏摄影
+                    <span class="arrow"></span>
+                </a>
+                <div class="category_box">
+
+                </div>
+            </li>
+            <li class="category_li">
+                <a href="" class="category_name">
+                    日用出行
+                    <span class="arrow"></span>
+                </a>
+                <div class="category_box">
+
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 商品分区 -->
+    <div class="content">
+        <div class="content_list">
+           <div class="content_list1">
+               <ul class="list_box">
+                   <li>
+                       <a href="">
+                           <img src="./images/phone.jpg" alt="">
+                       </a>
+                   </li>
+                   <li>
+                    <a href="">
+                        <img src="./images/shoubiao.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./images/phone1.jpg" alt="">
+                    </a>
+                </li>
+               </ul>
+           </div>
+        </div>
+        <div class="promotion">
+            <div class="time">
+                <div class="rush_title">
+                     <img src="./images/qianggou.png" alt="">
+                     <p class="title_p1">
+                        <span>距离结束</span>
+                        <span>
+                            <span class="bolder">05</span>
+                            <em class="risk">时</em>
+                            <span class="bolder">21</span>
+                            <em class="risk">分</em>
+                            <span class="bolder">5</span>
+                            <em class="risk">秒</em>
+                        </span>
+                     </p>
+                </div>
+                <div class="more">
+                    <a href="">更多场次></a>
+                 </div>
+            </div>
+           <div class="promotion_list">
+            <div class="swiper-container swiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" >
+                    <div class="swiper-slide-active" data-swiper-parallax-scale="0.15">
+                        <img src="./images/5z.png" alt="" class="corner-img">
+                        <a target="_blank" href="" class="J_prod-link" >
+                      
+                        <img class="prod-img" 
+                         src="./images/swphone1.png" >
+                        </a>
+                        <div class="prod-info">
+                            <p class="name">iQOO Z1 5G版 8GB+128GB 星河银</p>
+                            <p class="desc">五折秒杀，限量一台！</p>
+                            <p class="price">
+                                <span class="text"><dfn>￥</dfn>1149</span>
+                                <span class="disabled"><dfn>￥</dfn>2298</span>
+                            </p>
+                        </div>
+                    </div>
+                  
+                  </div>
+                  <div class="swiper-slide"><div class="swiper-slide-active">
+                    <img src="./images/xianshi.png" alt="" class="corner-img">
+                    <a target="_blank" href="" class="J_prod-link" >
+                    <img class="prod-img" 
+                     src="./images/sw2.png" >
+                    </a>
+                    <div class="prod-info">
+                        <p class="name">vivo TwS Neo真无线耳机星际蓝</p>
+                        <p class="desc">五折秒杀，限量一台！</p>
+                        <p class="price">
+                            <span class="text"><dfn>￥</dfn>1149</span>
+                            <span class="disabled"><dfn>￥</dfn>2298</span>
+                        </p>
+                    </div>
+                </div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-active">
+                    <img src="./images/9.png" alt="" class="corner-img">
+                    <a target="_blank" href="" class="J_prod-link" >
+                  
+                    <img class="prod-img" 
+                     src="./images/sw3.png" >
+                    </a>
+                    <div class="prod-info">
+                        <p class="name">iQOO Z1 5G版 8GB+128GB 星河银</p>
+                        <p class="desc">五折秒杀，限量一台！</p>
+                        <p class="price">
+                            <span class="text"><dfn>￥</dfn>1149</span>
+                            <span class="disabled"><dfn>￥</dfn>2298</span>
+                        </p>
+                    </div>
+                </div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-active">
+                    <img src="./images/9.png" alt="" class="corner-img">
+                    <a target="_blank" href="" class="J_prod-link" >
+                 
+                    <img class="prod-img" 
+                     src="./images/sw4.png" >
+                    </a>
+                    <div class="prod-info">
+                        <p class="name">iQOO Z1 5G版 8GB+128GB 星河银</p>
+                        <p class="desc">五折秒杀，限量一台！</p>
+                        <p class="price">
+                            <span class="text"><dfn>￥</dfn>1149</span>
+                            <span class="disabled"><dfn>￥</dfn>2298</span>
+                        </p>
+                    </div>
+                </div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-active">
+                    <img src="./images/xianshi.png" alt="" class="corner-img">
+                    <a target="_blank" href="" class="J_prod-link" >
+                   
+                    <img class="prod-img" 
+                     src="./images/sw5.png" >
+                    </a>
+                    <div class="prod-info">
+                        <p class="name">iQOO Z1 5G版 8GB+128GB 星河银</p>
+                        <p class="desc">五折秒杀，限量一台！</p>
+                        <p class="price">
+                            <span class="text"><dfn>￥</dfn>1149</span>
+                            <span class="disabled"><dfn>￥</dfn>2298</span>
+                        </p>
+                    </div>
+                </div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-active">
+                    <img src="./images/xianshi.png" alt="" class="corner-img">
+                    <a target="_blank" href="" class="J_prod-link" >
+                   
+                    <img class="prod-img" 
+                     src="./images/sw2.png" >
+                    </a>
+                    <div class="prod-info">
+                        <p class="name">iQOO Z1 5G版 8GB+128GB 星河银</p>
+                        <p class="desc">五折秒杀，限量一台！</p>
+                        <p class="price">
+                            <span class="text"><dfn>￥</dfn>1149</span>
+                            <span class="disabled"><dfn>￥</dfn>2298</span>
+                        </p>
+                    </div>
+                </div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-active">
+                    <img src="./images/xianshi.png" alt="" class="corner-img">
+                    <a target="_blank" href="" class="J_prod-link" >
+                   
+                    <img class="prod-img" 
+                     src="./images/sw3.png" >
+                    </a>
+                    <div class="prod-info">
+                        <p class="name">iQOO Z1 5G版 8GB+128GB 星河银</p>
+                        <p class="desc">五折秒杀，限量一台！</p>
+                        <p class="price">
+                            <span class="text"><dfn>￥</dfn>1149</span>
+                            <span class="disabled"><dfn>￥</dfn>2298</span>
+                        </p>
+                    </div>
+                </div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-active">
+                    <img src="./images/xianshi.png" alt="" class="corner-img">
+                    <a target="_blank" href="" class="J_prod-link" >
+                  
+                    <img class="prod-img" 
+                     src="./images/sw7.png" >
+                    </a>
+                    <div class="prod-info">
+                        <p class="name">iQOO Z1 5G版 8GB+128GB 星河银</p>
+                        <p class="desc">五折秒杀，限量一台！</p>
+                        <p class="price">
+                            <span class="text"><dfn>￥</dfn>1149</span>
+                            <span class="disabled"><dfn>￥</dfn>2298</span>
+                        </p>
+                    </div>
+                </div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-active">
+                    <img src="./images/xianshi.png" alt="" class="corner-img">
+                    <a target="_blank" href="" class="J_prod-link" >
+                  
+                    <img class="prod-img" 
+                     src="./images/sw6.png" >
+                    </a>
+                    <div class="prod-info">
+                        <p class="name">iQOO Z1 5G版 8GB+128GB 星河银</p>
+                        <p class="desc">五折秒杀，限量一台！</p>
+                        <p class="price">
+                            <span class="text"><dfn>￥</dfn>1149</span>
+                            <span class="disabled"><dfn>￥</dfn>2298</span>
+                        </p>
+                    </div>
+                </div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-active">
+                    <img src="./images/xianshi.png" alt="" class="corner-img">
+                    <a target="_blank" href="" class="J_prod-link" >
+                   
+                    <img class="prod-img" 
+                     src="./images/sw4.png" >
+                    </a>
+                    <div class="prod-info">
+                        <p class="name">iQOO Z1 5G版 8GB+128GB 星河银</p>
+                        <p class="desc">五折秒杀，限量一台！</p>
+                        <p class="price">
+                            <span class="text"><dfn>￥</dfn>1149</span>
+                            <span class="disabled"><dfn>￥</dfn>2298</span>
+                        </p>
+                    </div>
+                </div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-active">
+                    <img src="./images/xianshi.png" alt="" class="corner-img">
+                    <a target="_blank" href="" class="J_prod-link" >
+                  
+                    <img class="prod-img" 
+                     src="./images/sw2.png" >
+                    </a>
+                    <div class="prod-info">
+                        <p class="name">iQOO Z1 5G版 8GB+128GB 星河银</p>
+                        <p class="desc">五折秒杀，限量一台！</p>
+                        <p class="price">
+                            <span class="text"><dfn>￥</dfn>1149</span>
+                            <span class="disabled"><dfn>￥</dfn>2298</span>
+                        </p>
+                    </div>
+                </div></div>
+                  <div class="swiper-slide"><div class="swiper-slide-active">
+                    <img src="./images/xianshi.png" alt="" class="corner-img">
+                    <a target="_blank" href="" class="J_prod-link" >
+                 
+                    <img class="prod-img" 
+                     src="./images/sw7.png" >
+                    </a>
+                    <div class="prod-info">
+                        <p class="name">iQOO Z1 5G版 8GB+128GB 星河银</p>
+                        <p class="desc">五折秒杀，限量一台！</p>
+                        <p class="price">
+                            <span class="text"><dfn>￥</dfn>1149</span>
+                            <span class="disabled"><dfn>￥</dfn>2298</span>
+                        </p>
+                    </div>
+                </div></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+           </div>
+
+        </div>
+        <!-- 热卖专区 -->
+        <ul class="floor-list">
+            <li class="floor_c_1">
+                <div class="info">
+                    <p class="subject">热卖专区</p>
+                </div>
+                <ul class="box-list" id="phoneH">
+                    <!-- <li class="box">
+                        <a  href="https://shop.vivo.com.cn/product/10002225?colorSkuid=103651" >
+                            <img alt="" src="https://shopstatic.vivo.com.cn/vivoshop/commodity/25/10002225_1587193557457_750x750.png.webp">
+                        </a>
+                        <div class="prodinfo">
+                            <p class="name">iQOO Neo3 5G版</p>
+                            <p class="feature"> 144Hz高刷竞速屏/高通骁龙865</p>
+                            <p class="rmb-symbol"><i>￥</i>2998.00</p>
+                        </div>
+                    </li> -->
+                </ul> 
+            </li> 
+            <li class="floor_c_2">
+                <div class="info">
+                    <p class="subject">精品手机</p>
+                </div>
+                <ul class="box-list" id="phoneJ">
+                    <!-- <li class="boxImg">
+                        <a  href="https://shop.vivo.com.cn/product/10002225?colorSkuid=103651" >
+                            <img alt="" src="https://shopstatic.vivo.com.cn/vivoshop/commodity/25/10002225_1587193557457_750x750.png.webp">
+                        </a>
+                    </li> -->
+                    <!-- <li class="box">
+                        <a  href="https://shop.vivo.com.cn/product/10002225?colorSkuid=103651" >
+                            <img alt="" src="https://shopstatic.vivo.com.cn/vivoshop/commodity/25/10002225_1587193557457_750x750.png.webp">
+                        </a>
+                        <div class="prodinfo">
+                            <p class="name">iQOO Neo3 5G版</p>
+                            <p class="feature"> 144Hz高刷竞速屏/高通骁龙865</p>
+                            <p class="rmb-symbol"><i>￥</i>2998.00</p>
+                        </div>
+                    </li> -->
+                </ul>
+            </li> 
+            <li class="floor_c_3">
+                <div class="info">
+                    <p class="subject">精品配件</p>
+                    <ul class="more_wrapper">
+                        <li>手机充电</li>
+                        <li>手机壳膜</li>
+                        <li>音乐设备</li>
+                        <li>更多></li>
+                    </ul>
+                </div>
+                <ul class="box-list" id="phoneP">
+                    <!-- <li class="box">
+                        <a  href="https://shop.vivo.com.cn/product/10002225?colorSkuid=103651" >
+                            <img alt="" src="https://shopstatic.vivo.com.cn/vivoshop/commodity/25/10002225_1587193557457_750x750.png.webp">
+                        </a>
+                        <div class="prodinfo">
+                            <p class="name">iQOO Neo3 5G版</p>
+                            <p class="feature"> 144Hz高刷竞速屏/高通骁龙865</p>
+                            <p class="rmb-symbol"><i>￥</i>2998.00</p>
+                        </div>
+                    </li> -->
+                </ul>
+            </li>    
+        </ul>
+    </div>
+     <!--底部  -->
+    <div class="footer">
+        <div class="feature">
+             <ul class="feature_list">
+                 <li class="list_item">
+                     <i class="iconfont icon-zhengpin"></i>
+                     <span>官方正品</span>
+                 </li>
+                 <li class="list_item">
+                    <i class="iconfont icon-baoguo"></i>
+                    <span>顺丰极速达</span>
+                 </li>
+                 <li class="list_item">
+                    <i class="iconfont icon-aixin"></i>
+                    <span>全国联保</span>
+                 </li>
+                 <li class="list_item">
+                    <i class="iconfont icon-shandianfahuo"></i>
+                    <span>免费定制</span>
+                 </li>
+             </ul>
+        </div>
+        <div class="wrap">
+           <div class="warp_content" >
+                <ul class="content_left ">
+                    <li>
+                       <dl>
+                           <dt>热门链接</dt>
+                           <dd>
+                               <a href="">X50 Pro</a> 
+                            </dd>
+                           <dd>
+                            <a href="">S7</a>
+                            </dd>
+                           <dd>
+                            <a href="">NEX 3S</a>
+                            </dd>
+                           <dd>
+                            <a href="">vivo摄影</a>
+                            </dd>
+                           <dd>
+                            <a href="">查找手机</a>
+                            </dd>
+                           <dd>
+                            <a href="">常见问题</a>
+                            </dd>
+                       </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>在线购买</dt>
+                            <dd>
+                                <a href="">官方商城</a>
+                            </dd>
+                            <dd>
+                                <a href="">选购手机</a>
+                            </dd>
+                            <dd>
+                                <a href="">选购配件</a>
+                            </dd>
+                            <dd>
+                                <a href="">企业服务</a>
+                            </dd>
+                            <dd>
+                                <a href=""> 以旧换新</a>
+                            </dd>
+                            <dd>
+                                <a href="">保障服务题</a>
+                            </dd>
+                        </dl> 
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>服务支持</dt>
+                            <dd>
+                                <a href=""></a>
+                                体验店</dd>
+                            <dd>
+                                <a href=""></a>
+                                服务首页</dd>
+                            <dd>
+                                <a href="">服务网点查询</a>
+                            </dd>
+
+                            <dd>
+                                <a href="">真伪查询</a>
+                            </dd>
+                            <dd>
+                                <a href="">预约维修</a>
+                            </dd>
+                            <dd>
+                                <a href="">维修配件价格</a>
+                            </dd>
+                            <dd>
+                                <a href="">服务政策</a>
+                            </dd>
+                            <dd>
+                                <a href="">安全公告</a>
+                            </dd>
+                        </dl> 
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>vivo社区</dt>
+                            <dd>
+                                <a href="">社区首页</a>
+                            </dd>
+                            <dd>
+                                <a href="">摄影专区</a>
+                            </dd>
+                            <dd>
+                                <a href="">新浪微博</a>
+                            </dd>
+                            <dd>
+                                <a href="">百度贴吧</a>
+                            </dd>
+                            <dd>
+                                <a href="">兴趣部落</a>  
+                            </dd> 
+                        </dl> 
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>关于vivo </dt>
+                            <dd>
+                                <a href="">vivo简介</a>
+                            </dd>
+                            <dd>
+                                <a href="">工作机会</a>
+                            </dd>
+                            <dd>
+                                <a href="">新闻资讯</a>
+                            </dd>
+                            <dd>
+                                <a href="">采购平台</a>
+                             </dd>
+                            <dd>
+                                <a href="">供应商协同平台</a>
+                            </dd>
+                            <dd>
+                                <a href="">开放平台</a>
+                            </dd>
+                            <dd>
+                                <a href=""> 廉正合规</a>   
+                            </dd>
+                        </dl> 
+                    </li>
+                </ul>
+                <div class="content_right">
+                    <a class="foot_online" href="">
+                        <i class="iconfont  icon-zaixiankefucustomerservice"></i>
+                        <span>在线客服</span>   
+                    </a>
+                    <div class="foot_phoneBox">
+                        <p>
+                            <i class="iconfont icon-icon_dianhua"></i>
+                            <span>全国客户服务热线 7*24小时</span> 
+                        </p>
+                        <a class="foot_phone" href="">400-678-9688</a>
+                        
+                    </div>
+                    <div class="foot_phoneBox">
+                        <p>
+                           <i class="iconfont icon-kefu"></i>
+                           <span> NEX专属服务热线 7*24小时</span>
+                           
+                        </p>
+                        <a class="foot_phone" href="">400-679-9688</a>
+                    </div>
+                    <div class="foot_vivoCare">
+                        <p>
+                            <i class="iconfont icon-guanzhu"></i>
+                            <span>关注vivo</span>
+                        </p>
+                        <ul class="foot_codeList">
+                            <li >
+                                <a  href="" class="iconfont icon-weibo" ></a>
+                            </li>
+                            <li class="codeList_item1">
+                                <a  href="" class="iconfont icon-weixin"></a>
+                                <div class="foot_QRCode1">
+                                    <img  src="./images/weixin1.png" >
+                                    <span>公众号：vivo官方商城</span>
+                                </div>
+                            </li>
+                            <li class="codeList_item2">
+                                
+                                <a  href="" class="iconfont icon-27" ></a>
+                                <div class="foot_QRCode2">
+                                    <img src="./images/zhifubao1.png" >
+                                    <span>生活号：vivo智能手机</span>
+                                </div>
+                            </li>
+                            <li class="codeList_item3">  
+                                <a  href="" class="iconfont icon-xiaochengxu"></a>
+                                <div class="foot_QRCode3">
+                                    <img src="./images/xiaochengxu1.jpg" >
+                                    <span>小程序：vivo官方商城</span>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+                </div>     
+        </div>
+        <div class="foot_bottom">
+            <div class="foot_copyright">
+                <p >
+                    ©2011-2020 
+                    <span class="sp1">广东天宸网络科技有限公司</span>
+                    版权所有 
+                    <span class="foot_copyright_line">|</span>
+                    <span class="foot-copyright-main">
+                        <a href="">隐私政策</a>
+                        <span> | </span>
+                        <a href="">法律声明</a>
+                        <span> | </span>
+                        <span></span>
+                        <a class="f_bussiness-license" href="">营业执照
+    
+                        </a>
+                        <span> | </span>
+                        <a class="vp-foot-crtext"  href="" >粤B2-20080267 | 粤ICP备14052990号
+    
+                        </a>
+                        <span class="vp-foot-icon-lastLine"> | </span>
+                        <a class="vp-foot-policetext" href="">粤公网安备 44190002004246号
+                        </a>
+                    </span>
+                    <a class="foot_country" href="" >
+                        Select Location
+                        <span class="iconfont icon-diqiuquanqiu"></span>
+                    </a>
+                   
+                </p>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+    <!-- 固定 -->
+   <ul class="foor">
+       <li >
+           <i class="iconfont icon-gouwuche-weixuanzhong"></i>
+           <div class="tip">
+               <span>购物车</span>
+           </div>
+       </li>
+       <li>
+           <i class="iconfont icon-84kefu"></i>
+           <div class="tip">
+            <span>小v客服</span>
+           </div>
+       </li>
+       <li>
+           <i class="iconfont icon-zu1770"></i>
+           <div class="tip">
+            <span>帮助中心</span>
+           </div>
+       </li>
+       <li>
+        <i class="iconfont icon-dingbu"></i>
+        <div class="tip">
+            <span>返回顶部</span>
+        </div>
+       </li>
+   </ul>
+    <script src="./js/index.js"></script>
+    <script src="./js/index1.js"></script>
+    <script>
+        var swiper1 = new Swiper('.swiper1', {
+        // 
+          spaceBetween: 30,
+        //自动切换
+          autoplay:true,
+          effect: 'fade',
+          pagination: {
+            el: '.swp1',
+            clickable: true,
+          }
+        });
+
+        var swiper2 = new Swiper('.swiper2', {
+      slidesPerView: "auto",
+      direction: getDirection(),
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      on: {
+        resize: function () {
+          swiper2.changeDirection(getDirection());
+        }
+      }
+    });
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+      return direction;
+    }
+      </script>
+</body>
+</html>

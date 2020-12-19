@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+b,em,i{
+    font-style: normal;
+}
+img{
+    border: none;
+}
+/* ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+} */
+/* 中间内容 */
+.content{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 页面导航 */
+.content .wrapper{
+    position: relative;
+    width: 100%;
+    height: 72px;
+    line-height: 72px;
+    color: #999;
+    font-size: 13px;
+}
+.content .wrapper a{
+    display: inline-block;
+    color: #333;
+    font-size: 13px;
+}
+.content .wrapper b{
+    background: url(../images/xuebitu.png) no-repeat -8px -62px;
+    width: 8px;
+    height: 24px;
+    margin: 0 10px;
+    vertical-align: middle;
+    font-size: 0;
+    display: inline-block;   
+}
+.content .nav_inline{
+    display: inline;
+}
+/* 种类导航 */
+.wrapperT{
+    width: 100%;
+}
+.filter_wrap{
+    padding: 0 36px;
+    font-size: 14px;
+    color: #666;
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 38px;
+}
+.filter_tab{
+    position: relative;
+    margin: 0 -18px;
+    padding: 7px 0 1 px;
+    font-size: 1px;
+    text-align: justify;
+}
+.filter_tab::after{
+    background-color: #ddd;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left:18px;
+    right: 18px;
+    height: 1px;
+}
+.filter_tab_menu{
+    margin: 0 18px;
+    display: inline-block;
+}
+.filter_tab_menu a{
+   position: relative;
+   display: block;
+   color: #777;
+   font-size: 16px;
+   text-align: center;
+   line-height: 63px;
+}
+.filter_tab_menu a:hover{
+    color: #000;
+ }
+.filter_tab_menu a.active{
+    color: #000;
+ }
+.filter_tab_menu a.active::after{
+    background-color: #000;
+    content: "";
+    position: absolute;
+    z-index: 3;
+    bottom: -1px;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 2px;
+ }
+.filter_tags{
+    padding: 2px 0;
+}
+.filter_tags_cont{
+   overflow: hidden;
+   padding: 11px 0;
+}
+.filter_tags a{
+    display: inline-block;
+    margin-right: 44px;
+    white-space: nowrap;
+    color: #777;
+    line-height: 30px;
+}
+.filter_tags a:hover{
+    color: #000;
+ }
+.container{
+    width: 1200px;
+}
+.spuitem_list{
+    width: 101%;
+}
+.spu-item{
+    margin-right: 7px;
+    width: 292px;
+    height: 340px;
+    padding-top: 40px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
+    font-size: 0;
+    text-align: center;
+    background: #fff;
+}
+.spu-item:hover{
+    box-shadow: 0 15px 40px 0 rgb(0, 0, 0, .09);
+    transform: translateY(-1px);
+}
+.spu-item a{
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.spu-item .crner-good{
+    background-position: 100% 0;
+    right: 60px;
+    position: absolute;
+    z-index: 1;
+    top: -7px;
+    width: 47px;
+    height: 47px;
+    background-repeat: no-repeat;
+
+}
+.spu-item .crner-good img{
+    width: 100%;
+    height: auto;
+}
+.spu-item .figure{
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    position: relative;
+}
+.spu-item .figure img{
+    display: block;
+    width: 180px;
+    height: 180px;
+}
+.spu-info{
+    width: 180px;
+    margin: 20px auto 0;
+}
+.spu-info p{
+    text-align: center;
+    overflow: hidden;
+}
+.spu-info .name{
+    margin: 0 0 10px 0;
+    color: #000;
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.spu-info .feature{
+    margin: 0 0 23px;
+    height: 35px;
+    color: #333;
+    font-size: 12px;
+    line-height: 18px;
+    /* 可以把文字完整的放在标签里，不会溢出 （下面两行一起用）*/
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.spu-info .sale-point{
+    margin-left: -1px;
+}
+.spu-info .price{
+    color: #f51919;
+    font-size: 16px;
+    line-height: 1;
+}
+.spu-info .price i{
+    margin-right: 0;
+    color: #f51919;
+    font-size: 14px;
+}
+/* 分页 */
+.pagination{
+    text-align: center;
+    font-size: 14px;
+    padding: 34px 0;
+    margin-bottom: 50px;
+}
+

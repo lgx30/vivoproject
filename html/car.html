@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <script src="../data/jquery/jquery.min.js"></script>
+    <script src="../data/jquery-cookie-master/src/jquery.cookie.js"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../data/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/car.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="header_top">
+            <div class="top">
+                <ul class="top_navs">
+                    <li>
+                        <a href="" class="head_brand">品牌</a>
+                    </li>
+                    <li>
+                        <a href="" class="head_originos">OriginOS</a>
+                    </li>
+                    <li>
+                        <a href="" class="head_store">体验店</a>
+                    </li>
+                    <li>
+                        <a href="" class="head_cooperation">企业业务</a>
+                    </li>
+                    <li>
+                        <a href="" class="head_bbs">社区</a>
+                    </li>
+                </ul>
+                <div class="top_user">
+                    <a href="" class="user_app">
+                        <i class="iconfont icon-xiazai"></i>
+                        下载APP
+                        <div class="user_app_qrCode">
+                            <img src="../images/app.png">
+                            <span>扫描下载 vivo官网APP</span>
+                        </div>
+                    </a>
+                    <a href="" class="shopCar">购物车</a>
+                    <div class="member_login">
+                        <span class="aa">个人中心</span>
+                        <div class="user_lists">
+                            <div class="user_content">
+                                <a class="user_login" href="./login.html">
+                                    <i class="iconfont icon-denglu"></i>
+                                    <span>登录</span>
+                                </a>
+                            </div>
+                            <div class="user_content">
+                                <a class="user_register" href="./rigister.html">
+                                    <i class="iconfont icon-zhuceshenpi"></i>
+                                    <span>注册</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_buttom">
+            <div class="header_logo">
+                <img src="../images/login_logo1.png" alt="">
+            </div>
+            <ul class="site_navs">
+                <li class="head_series">
+                    <a id="15" href="" class="category_nex">NEX系列</a>
+                </li>
+                <li class="head_series">
+                    <a id="16" href="" class="category_x">X系列</a>
+                </li>
+                <li class="head_series">
+                    <a id="70" href="" class="category_s">S系列</a>
+                </li>
+                <li class="head_series">
+                    <a id="18" href="" class="category_y">Y系列</a>
+                </li>
+                <li class="head_series">
+                    <a id="17" href="" class="category_z">Z系列</a>
+                </li>
+                <li class="head_series">
+                    <a id="19" href="" class="category_u">U系列</a>
+                </li>
+                <li class="head_series">
+                    <a id="138" href="" class="category_iqoo">iQOO手机</a>
+                </li>
+                <li class="head_series">
+                    <a id="88" href="" class="category_earphone">智能硬件</a></li>
+                <li>
+                    <a id="20" href="" class="head_shop">商城</a>
+                </li>
+                <li>
+                    <a id="21" href="" class="head_service">服务</a>
+                </li>
+
+            </ul>
+            <div class="navs_right">
+                <i class="iconfont icon-xinxi"></i>
+            </div>
+        </div>
+    </div>
+    <!-- 内容 -->
+    <div class="content">
+        <div class="cart-title">
+            <span>我的购物车</span>
+            <a href="./list.html" class="continue-shopping">
+                继续购物
+                <b>&gt; </b>
+            </a>
+        </div>
+        <!-- 如果购物车里没有商品 -->
+        <!-- <div class="no-result">
+            <div>
+                <img src="../images/shop.png">
+            </div>
+            <div class="no-result-des">哎呀，购物车为空！</div>
+            <div class="no-result-btn-container">
+                <button class="v-btn-brand ">
+                    去选购逛逛
+                </button>
+                <button class="v-btn-brand">
+                    我的收藏
+                </button>
+            </div>
+        </div> -->
+        <!-- 如果购物车里有商品 -->
+        <!-- <div class="cart_table">
+            <table class="order_table">
+                <thead>
+                    <tr>
+                        <th class="check-col">
+                            <input type="checkbox" class="cheinp">
+                            <span>全选</span>
+                        </th>
+                        <th class="goods-col">
+                            商品
+                        </th>
+                        <th class="price-col">
+                            价格（元）
+                        </th>
+                        <th>数量</th>
+                        <th>优惠</th>
+                        <th>小计（元）</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody class="tbdy">
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="tbdy-inp">
+                            <a href="" class="tda">
+                                <div class="figure">
+                                    <img
+                                        src="https://shopstatic.vivo.com.cn/vivoshop/commodity/40/10006140_1607569905530_100x100.png">
+                                </div>
+                            </a>
+                        </td>
+                        <td class="goods-col1">
+                            iQOO U3 5G版 8GB+128GB 辉光蓝
+                        </td>
+                        <td class="price-col1">1698.00</td>
+                        <td>
+                            <span class="number-box">
+                                <a href="javascript:;" class="reduce-num">
+                                    -
+                                </a>
+                                <input title="请输入购买量" class="prod-num">
+                                <a href="javascript:;" class="add-num">
+                                    +
+                                </a>
+                            </span>
+                        </td>
+                        <td>
+                            <span>0.00</span>
+                        </td>
+                        <td class="total-price">3396.00</td>
+                        <td>
+                            <span class="favorite">
+                                删除
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> -->
+        <!-- <div id="fixed-bottom-bar" class="cart-toolbar-wrap ">
+            <div class="toolbar-wrapper">
+                    <div class="option-operation">
+                        <ul>
+                            <li>
+                                <input type="checkbox" class="cheinp">
+                                <span>全选</span>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">删除选中的商品</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cart-toolbar-right">
+                        <table class="cart-toolbar-table">
+                            <tr>
+                                <td class="sum-area">
+                                    <p class="sum-area-infoI">
+                                        已选商品
+                                        <em>
+                                            <b class="red">0</b>
+                                        </em>件，合计（不含运费）：
+                                        <b class="price_large">
+                                            <dfn>¥</dfn>
+                                            <span>0.00</span>
+                                        </b>
+                                    </p>
+                                    <p class="sum-area-price">
+                                        ( 商品总价：
+                                        <span class="price">
+                                            <dfn>¥ </dfn>
+                                            <span class="price_z">0.00</span>
+                                        </span>
+                                        优惠：
+                                        <span class="price">
+                                            <dfn>¥ </dfn>
+                                            <span class="price_s">0.00</span>
+                                        </span> )
+                                    </p>
+                                </td>
+                                <td class="btn-area">
+                                    <button>去结算</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+            </div>
+        </div> -->
+    </div>
+    <!--底部  -->
+    <div class="footer">
+        <div class="feature">
+            <ul class="feature_list">
+                <li class="list_item">
+                    <i class="iconfont icon-zhengpin"></i>
+                    <span>官方正品</span>
+                </li>
+                <li class="list_item">
+                    <i class="iconfont icon-baoguo"></i>
+                    <span>顺丰极速达</span>
+                </li>
+                <li class="list_item">
+                    <i class="iconfont icon-aixin"></i>
+                    <span>全国联保</span>
+                </li>
+                <li class="list_item">
+                    <i class="iconfont icon-shandianfahuo"></i>
+                    <span>免费定制</span>
+                </li>
+            </ul>
+        </div>
+        <div class="wrap">
+            <div class="warp_content">
+                <ul class="content_left ">
+                    <li>
+                        <dl>
+                            <dt>热门链接</dt>
+                            <dd>
+                                <a href="">X50 Pro</a>
+                            </dd>
+                            <dd>
+                                <a href="">S7</a>
+                            </dd>
+                            <dd>
+                                <a href="">NEX 3S</a>
+                            </dd>
+                            <dd>
+                                <a href="">vivo摄影</a>
+                            </dd>
+                            <dd>
+                                <a href="">查找手机</a>
+                            </dd>
+                            <dd>
+                                <a href="">常见问题</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>在线购买</dt>
+                            <dd>
+                                <a href="">官方商城</a>
+                            </dd>
+                            <dd>
+                                <a href="">选购手机</a>
+                            </dd>
+                            <dd>
+                                <a href="">选购配件</a>
+                            </dd>
+                            <dd>
+                                <a href="">企业服务</a>
+                            </dd>
+                            <dd>
+                                <a href=""> 以旧换新</a>
+                            </dd>
+                            <dd>
+                                <a href="">保障服务题</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>服务支持</dt>
+                            <dd>
+                                <a href=""></a>
+                                体验店</dd>
+                            <dd>
+                                <a href=""></a>
+                                服务首页</dd>
+                            <dd>
+                                <a href="">服务网点查询</a>
+                            </dd>
+
+                            <dd>
+                                <a href="">真伪查询</a>
+                            </dd>
+                            <dd>
+                                <a href="">预约维修</a>
+                            </dd>
+                            <dd>
+                                <a href="">维修配件价格</a>
+                            </dd>
+                            <dd>
+                                <a href="">服务政策</a>
+                            </dd>
+                            <dd>
+                                <a href="">安全公告</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>vivo社区</dt>
+                            <dd>
+                                <a href="">社区首页</a>
+                            </dd>
+                            <dd>
+                                <a href="">摄影专区</a>
+                            </dd>
+                            <dd>
+                                <a href="">新浪微博</a>
+                            </dd>
+                            <dd>
+                                <a href="">百度贴吧</a>
+                            </dd>
+                            <dd>
+                                <a href="">兴趣部落</a>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>关于vivo </dt>
+                            <dd>
+                                <a href="">vivo简介</a>
+                            </dd>
+                            <dd>
+                                <a href="">工作机会</a>
+                            </dd>
+                            <dd>
+                                <a href="">新闻资讯</a>
+                            </dd>
+                            <dd>
+                                <a href="">采购平台</a>
+                            </dd>
+                            <dd>
+                                <a href="">供应商协同平台</a>
+                            </dd>
+                            <dd>
+                                <a href="">开放平台</a>
+                            </dd>
+                            <dd>
+                                <a href=""> 廉正合规</a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+                <div class="content_right">
+                    <a class="foot_online" href="">
+                        <i class="iconfont  icon-zaixiankefucustomerservice"></i>
+                        <span>在线客服</span>
+                    </a>
+                    <div class="foot_phoneBox">
+                        <p>
+                            <i class="iconfont icon-icon_dianhua"></i>
+                            <span>全国客户服务热线 7*24小时</span>
+                        </p>
+                        <a class="foot_phone" href="">400-678-9688</a>
+
+                    </div>
+                    <div class="foot_phoneBox">
+                        <p>
+                            <i class="iconfont icon-kefu"></i>
+                            <span> NEX专属服务热线 7*24小时</span>
+
+                        </p>
+                        <a class="foot_phone" href="">400-679-9688</a>
+                    </div>
+                    <div class="foot_vivoCare">
+                        <p>
+                            <i class="iconfont icon-guanzhu"></i>
+                            <span>关注vivo</span>
+                        </p>
+                        <ul class="foot_codeList">
+                            <li>
+                                <a href="" class="iconfont icon-weibo"></a>
+                            </li>
+                            <li class="codeList_item1">
+                                <a href="" class="iconfont icon-weixin"></a>
+                                <div class="foot_QRCode1">
+                                    <img src="../images/weixin1.png">
+                                    <span>公众号：vivo官方商城</span>
+                                </div>
+                            </li>
+                            <li class="codeList_item2">
+
+                                <a href="" class="iconfont icon-27"></a>
+                                <div class="foot_QRCode2">
+                                    <img src="../images/zhifubao1.png">
+                                    <span>生活号：vivo智能手机</span>
+                                </div>
+                            </li>
+                            <li class="codeList_item3">
+                                <a href="" class="iconfont icon-xiaochengxu"></a>
+                                <div class="foot_QRCode3">
+                                    <img src="../images/xiaochengxu1.jpg">
+                                    <span>小程序：vivo官方商城</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_bottom">
+                <div class="foot_copyright">
+                    <p>
+                        ©2011-2020
+                        <span class="sp1">广东天宸网络科技有限公司</span>
+                        版权所有
+                        <span class="foot_copyright_line">|</span>
+                        <span class="foot-copyright-main">
+                            <a href="">隐私政策</a>
+                            <span> | </span>
+                            <a href="">法律声明</a>
+                            <span> | </span>
+                            <span></span>
+                            <a class="f_bussiness-license" href="">营业执照
+
+                            </a>
+                            <span> | </span>
+                            <a class="vp-foot-crtext" href="">粤B2-20080267 | 粤ICP备14052990号
+
+                            </a>
+                            <span class="vp-foot-icon-lastLine"> | </span>
+                            <a class="vp-foot-policetext" href="">粤公网安备 44190002004246号
+                            </a>
+                        </span>
+                        <a class="foot_country" href="">
+                            Select Location
+                            <span class="iconfont icon-diqiuquanqiu"></span>
+                        </a>
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 固定 -->
+    <ul class="foor">
+        <li>
+            <i class="iconfont icon-gouwuche-weixuanzhong"></i>
+            <div class="tip">
+                <span>购物车</span>
+            </div>
+        </li>
+        <li>
+            <i class="iconfont icon-84kefu"></i>
+            <div class="tip">
+                <span>小v客服</span>
+            </div>
+        </li>
+        <li>
+            <i class="iconfont icon-zu1770"></i>
+            <div class="tip">
+                <span>帮助中心</span>
+            </div>
+        </li>
+        <li>
+            <i class="iconfont icon-dingbu"></i>
+            <div class="tip">
+                <span>返回顶部</span>
+            </div>
+        </li>
+    </ul>
+    <script src="../js/index.js"></script>
+    <script src="../js/car.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+body{
+  width: 100%;
+}
+body{
+    background:rgb(247, 247, 247)   
+}
+
+.box{
+    width: 100%;
+    height: 780px;
+    background-color: rgb(225, 236, 254);
+    .banner{
+        width:  1200px;
+        height: 780px;
+        position: relative;
+        margin: 0 auto;
+        overflow: hidden;
+        .banner_img{
+            width: 100%;
+            height: 100%;
+        }
+        .logo{
+            width: 145px;
+            height: 52px;
+            position: absolute;
+            top: 0;
+            left: 243px;
+            background-image: url(../images/login_logo.png);
+            background-size: 100% 100%;
+        }
+        .box2{
+            width: 360px;
+            height:567px;
+            min-height: 513px;
+            position: absolute;
+            top: 74px;
+            right: 0;
+            background: #fff;
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-bottom: 20px;
+            padding-right: 30px;
+            .form_logo{
+                width: 160px;
+                height: 42px;
+                margin: 0 auto;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .title{
+                margin-top: 15px;
+                font-size: 19px;
+                font-weight: 400;
+                color: #000;
+                text-align: center;
+            }
+           
+            #login{
+                width: 360px;
+               position: relative;
+                .p1{
+                    width: 360px;
+                    height: 48px;
+                    margin-top: 56px;
+                    border: 1px solid #dedfe0;
+                    position: relative;
+                   
+                    #username{
+                        width: 348px;
+                        height: 46px;
+                        float: left;
+                        display: block;
+                        border: none;
+                        outline: none;
+                        font-size: 16px;
+                        color: #000;
+                       padding-left: 12px;
+                    }
+                    label.error {
+                        position: absolute;
+                        z-index: 100;
+                        color:red;
+                        display: block;
+                        left: 12px;
+                        top: 117%;
+                    }
+                }
+                .p2{
+                    width: 360px;
+                    height: 48px;
+                    margin-top: 35px;
+                    border: 1px solid #dedfe0;
+                    position: relative;
+                    #password{
+                        width: 300px;
+                        height: 46px;
+                        font-size: 16px;
+                        color: #000;
+                        border: none;
+                        outline: none;
+                        padding: 0 48px 0 12px;
+                    }
+                    label.error {
+                        position: absolute;
+                        z-index: 100;
+                        top: 10px;
+                        color:red;
+                        display: block;
+                        left: 12px;
+                        top: 117%;
+                    }
+                    .eye{
+                        position: absolute;
+                        right: 15px;
+                        top: 15px;
+                        width: 21px;
+                        height: 18px;
+                        display: block;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                .p3{  
+                    margin-top: 35px;
+                    .btn1{
+                        width: 360px;
+                        height: 48px;
+                        line-height: 48px;
+                        font-size: 17px;
+                        color: #fff;
+                        text-align: center;
+                        margin: 0 auto;
+                       
+                        background-image: linear-gradient(90deg,#418eff,#4566ff); 
+                        border: none;
+                        outline: none;
+                        &:hover{
+                            cursor: pointer;
+                            background: #456fff;
+                        }
+                    }
+                }
+                .p4{
+                    margin-top: 15px;
+                    .btn2{
+                        width: 360px;
+                        height: 48px;
+                        line-height: 48px;
+                        border: 1px solid #456fff;
+                        color: #456fff;
+                        font-size: 17px;
+                        text-align: center;
+                        background: #fff;
+                        &:hover{
+                            cursor: pointer;
+                            background: #D4DFFA;
+                        }
+                    }
+                }
+            }
+            .sp{
+                font-size: 14px;
+                color: #666;
+                text-align: center;
+                margin-top: 20px;
+            }
+            .form_foot{
+                // width: 360px;
+                margin-top: 30px;
+                color: #999;
+                text-align: center;
+                font-size: 13px;
+                .title1{
+                    position: relative;
+                    &::before{
+                        content: "";
+                        width: 130px;
+                        height: 1px;
+                        background: #ccc;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                    }
+                    &::after{
+                        content: "";
+                        width: 130px;
+                        height: 1px;
+                        background: #ccc;
+                        position: absolute;
+                        top: 50%;
+                        right: 0;  
+                    }
+                }
+                .title2{
+                    width: 360px;
+                    margin-top: 15px;
+                    .imgs1{
+                        width: 26px;
+                        height: 26px;
+                        display: inline-block;
+                        background-image: url(../images/weixin.png);
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                        margin-right: 20px;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                    .imgs2{
+                            width: 26px;
+                            height: 26px;
+                            display: inline-block;
+                            background-image: url(../images/zhifubao.png);
+                            background-size: 100% 100%;
+                            background-repeat: no-repeat;
+                            margin-right:20px;
+                            &:hover{
+                                cursor: pointer;
+                            }
+                    }
+                    .imgs3{
+                        width: 26px;
+                        height: 26px;
+                        display: inline-block;
+                        background-image: url(../images/weibo.png);
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.foot{
+    width: 1200px;
+    margin-top: 135px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 11px;
+    color: #9d9d9d;
+    
+    .service{
+        width: 1200px;
+       
+        .to_server{
+            
+            text-decoration: none;
+            &:hover{
+               color: #456fff;
+            }
+            img{
+                width: 18px;
+                height: 15px;
+                vertical-align: text-bottom;
+                margin-right: 10px;
+            }
+            span{
+                margin-right: 30px;
+            }
+        }
+       
+    }
+    .copyrihgt{
+        padding: 10px 0;
+        font-size: 10px;
+        
+    }
+}
